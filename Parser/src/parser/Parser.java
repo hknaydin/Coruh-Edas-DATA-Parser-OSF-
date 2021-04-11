@@ -130,8 +130,8 @@ public class Parser {
         excel_file[i+1][0] = clock_names[i]; // set clock row by row
     }
     for(int i=1; i< Page_Height; i+=2){
-      excel_file[i][1] = "Alis";            //  set state 
-      excel_file[i+1][1] = "Veris";         //  set state
+      excel_file[i][1] = "Veris";            //  set state 
+      excel_file[i+1][1] = "Cekis";         //  set state
 
     }
 ////////////////////////////////////////////////////////////////////////////
@@ -139,8 +139,8 @@ public class Parser {
         excel_file_combined[i+1][0] = clock_names_combined[i];  // set clock row-row
     }
     for(int i=1; i< Row_combined; i+=2){
-      excel_file_combined[i][1] = "Alis";       //  set state
-      excel_file_combined[i+1][1] = "Veris";    //  set state
+      excel_file_combined[i][1] = "Veris";       //  set state
+      excel_file_combined[i+1][1] = "Cekis";    //  set state
 
     }
     
@@ -246,8 +246,8 @@ public class Parser {
                     System.err.println("toplam_alis: " + toplam_alis + "   toplam_veris :" + toplam_veris);
 
                     
-                    excel_file_combined[index][i] = String.valueOf(toplam_alis);
-                    excel_file_combined[index + 1][i] = String.valueOf(toplam_veris);
+                    excel_file_combined[index][i] = String.valueOf(toplam_veris);
+                    excel_file_combined[index + 1][i] = String.valueOf(toplam_alis);
                     
                     index += 2;
                 }
